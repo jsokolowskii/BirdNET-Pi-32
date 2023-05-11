@@ -9,15 +9,6 @@ export my_dir=$my_dir
 
 cd $my_dir/scripts || exit 1
 
-if [ "$(uname -m)" != "aarch64" ];then
-  echo "BirdNET-Pi requires a 64-bit OS.
-It looks like your operating system is using $(uname -m),
-but would need to be aarch64.
-Please take a look at https://birdnetwiki.pmcgui.xyz for more
-information"
-  exit 1
-fi
-
 #Install/Configure /etc/birdnet/birdnet.conf
 ./install_config.sh || exit 1
 sudo -E HOME=$HOME USER=$USER ./install_services.sh || exit 1
