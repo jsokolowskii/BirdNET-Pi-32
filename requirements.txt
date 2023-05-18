@@ -1,7 +1,7 @@
 pip
 wheel
 setuptools
-tflite_runtime-2.14.0-cp37-cp37m-linux_armv6l.whl
+tflite_runtime-2.14.0-cp39-cp39-linux_armv6l.whl
 colorama==0.4.4
 librosa
 pytz
